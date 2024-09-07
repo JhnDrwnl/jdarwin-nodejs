@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #D8A25E 10%, #343131 10%,#343131 20%, #D8A25E 20%, #D8A25E 30%,  #343131 30%, #343131 40%, #D8A25E 40%, #D8A25E 50%, #343131 50%, #343131 60%, #D8A25E 60%, #D8A25E 70%, #343131 70%, #343131 80%, #D8A25E 80%, #D8A25E 90%, #343131 90%);
+    background-size: 100% 400%;
+    animation: blinds 20s infinite linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+  }
+  
+  @keyframes blinds {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 0% 100%;
+    }
+  }
+  
+  .container {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(255, 165, 0, 0.7);
+    text-align: center;
+    width: 350px;
+    max-width: 90%;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: #ffa500; 
+  }
+  
+.form-group {
+    position: relative;
+    margin-bottom: 25px;
+    width: 100%;
+    max-width: 350px;
+    margin-left: 10px; 
+  }
+  
+  label {
+    position: absolute;
+    left: -6px;
+    top: 12px;
+    font-size: 16px;
+    color: #bbb;
+    transition: 0.3s ease all;
+    pointer-events: none;
+  }
+  
+  input {
+    padding: 12px 10px 12px 10px;
+    width: 100%;
+    border: 1px solid #ffa500; 
+    border-radius: 4px;
+    background-color: #333; 
+    color: #fff;
+    font-size: 16px;
+    margin-left: -20px; 
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #ff4500; 
+  }
+  
+  input:focus ~ label,
+  input:not(:placeholder-shown) ~ label {
+    top: -15px;
+    font-size: 12px;
+    color: #ffa500;
+    background-color: #333;
+    padding: 0 5px;
+    border-radius: 4px;
+  }
+  
+  input::placeholder {
+    color: transparent;
+  }
+  
+  
+
+button {
+    background-color: #ffa500; 
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  button:hover {
+    background-color: #ff4500; 
+    color: white;
+  }
+  
+
+  .error {
+    color: red;
+    font-weight: bold;
+  }
+  
+
+a.button {
+    display: inline-block;
+    background-color: #ffa500; 
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  a.button:hover {
+    background-color: #ff4500; 
+    color: white;
+  }
+  
+  
